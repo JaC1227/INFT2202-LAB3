@@ -1,4 +1,15 @@
+
+
+
 /* custom JavaScript goes here */
+
+// Call authGuard function to restrict access to the task list page
+$(document).ready(function() {
+  // Call authGuard function when the task list page is loaded
+  if ($('#mainContent').length) {
+      authGuard();
+  }
+});
 
 //IIFE - Immediately Invoked Function Expression
 //AKA - Anonymous Self-Executing Function
